@@ -29,7 +29,7 @@ pipeline {
                 sh 'printenv'
                 sh 'docker build -t docker.io/jhansidock/numeric-app:""$GIT_COMMIT"" .'
                 sh 'docker push docker.io/jhansidock/numeric-app:""$GIT_COMMIT""'
-            }
+            
          }
       }
            
